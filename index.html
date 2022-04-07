@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
 
 <head>
@@ -6,69 +7,226 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+      
   <title>Diego's Portfolio</title>
-    
+      
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/bfccef268c.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="stylesheet.css">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="carousel.css" rel="stylesheet">
 
 </head>
 
 <body>
+    
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a id="brand" class="navbar-brand" href="https://diegoberumen.github.io">Diego's Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Bio</a>
+                </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Projects
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="https://diegoberumen.github.io/PacHead/">Pac-Men</a></li>
+                <li><a class="dropdown-item" href="https://diegoberumen.github.io/Googly-Eyes/">Googly-Eyes</a></li>
+                <li><a class="dropdown-item" href="https://diegoberumen.github.io/LiveBusTracker/">Live Bus Tracker</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a id="brand" class="navbar-brand" href="https://diegoberumen.github.io">Diego's Portfolio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Bio</a>
-              </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Projects
+        <div class="d-flex flex-row bd-highlight mb-3">
+          <div class="p-2 bd-highlight">
+            <a href="https://www.linkedin.com/in/diego-berumen/">
+            <i class="fa-brands fa-linkedin-in"></i>
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="https://diegoberumen.github.io/PacHead/">Pac-Men</a></li>
-              <li><a class="dropdown-item" href="https://diegoberumen.github.io/Googly-Eyes/">Googly-Eyes</a></li>
-              <li><a class="dropdown-item" href="https://diegoberumen.github.io/LiveBusTracker/">Live Bus Tracker</a></li>
-            </ul>
-          </li>
-        </ul>
+          </div>
+          <div class="p-2 bd-highlight">
+            <a href="https://github.com/diegoberumen">
+            <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
 
-      <div class="d-flex flex-row bd-highlight mb-3">
-        <div class="p-2 bd-highlight">
-          <a href="https://www.linkedin.com/in/diego-berumen/">
-          <i class="fa-brands fa-linkedin-in"></i>
-          </a>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <svg class="bd-placeholder-img" width="100%" height="100%" src="20211213_090411.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+          <!-- <img src="PacPic.png"> -->
+
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Projects</h1>
+              <p>Text</p>
+              <p><a class="btn btn-lg btn-primary" href="https://github.com/diegoberumen/PacHead">Code</a><a class="btn btn-lg btn-primary" href="https://diegoberumen.github.io/PacHead/">Demo</a></p>
+            </div>
+          </div>
         </div>
-        <div class="p-2 bd-highlight">
-          <a href="https://github.com/diegoberumen">
-          <i class="fa-brands fa-github"></i>
-          </a>
+
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Bio / About me</h1>
+              <p>Some representative placeholder content for the second slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div>
         </div>
+
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>Contact Info.</h1>
+              <p>Some representative placeholder content for the third slide of this carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+
       </div>
 
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-  </nav>
-  
-  <div>
-    <img id="picture" src="20211213_090411.jpg">
-  </div>
 
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+
+        <div class="col-lg-4">
+          <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
+          <img src="pacgif.gif" height="140px" width="250px" border-radius="25px">
+
+          <h2>Pac-Men</h2>
+          <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+
+        <div class="col-lg-4">
+          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+          <h2>Googly-Eyes</h2>
+          <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+          <p><a class="btn btn-secondary" href="#googlyeyes">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+
+        <div class="col-lg-4">
+          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+          <h2>Live Bus Tracker</h2>
+          <p>And lastly this, the third column of representative placeholder content.</p>
+          <p><a class="btn btn-secondary" href="#mapanimation">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div id="pacmen" class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Pac-Men<span class="text-muted"> Some Text</span></h2>
+          <p class="lead">Description</p>
+        </div>
+        <div class="col-md-5">
+          <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+          <img src="PacPic.png" height="500px" width="500px">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div id="googlyeyes"class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">Googly-Eyes<span class="text-muted"> Some text</span></h2>
+          <p class="lead">Description</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+          <img src="EyesPic.png" height="500px" width="500px">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div id="mapanimation" class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Live Bus Tracker<span class="text-muted"> Some Text</span></h2>
+          <p class="lead">Description</p>
+        </div>
+        <div class="col-md-5">
+          <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+          <img src="MapPic.png" height="500px" width="500px">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+
+  </main>
+
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p> Diego Berumen &middot; <a href="https://www.linkedin.com/in/diego-berumen/"><i class="fa-brands fa-linkedin-in"></i></a> &middot; <a href="https://github.com/diegoberumen"><i class="fa-brands fa-github"></i></a>
+    </p>
+  </footer>
+
+  <!-- <script src="bootstrap.bundle.min.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+  
 </body>
 
 </html>
