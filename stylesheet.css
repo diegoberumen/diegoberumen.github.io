@@ -1,0 +1,9 @@
+#brand {
+  color: rgb(204, 6, 6);
+  font-family: 'Space Mono', monospace;
+}
+
+#picture {
+  width: 100%;
+  height: auto;
+}
