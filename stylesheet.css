@@ -5,6 +5,15 @@
   font-size: xx-large;
 }
 
+#brand:hover {
+  color: rgb(238, 16, 16);
+  text-shadow: 0px 0px 30px #f53c04;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
 #picture {
   width: 100%;
   height: auto;
@@ -30,4 +39,36 @@ header {
 
 body {
   background-color: black;
+}
+
+.circular--square{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.mailto {
+  text-decoration: none;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.mailto:hover {
+  color: #9036f7;
+  text-shadow: 0px 0px 30px #3e0283;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.sociallink:hover {
+  color: #9036f7;
+  text-shadow: 0px 0px 30px #3e0283;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
